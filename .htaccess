@@ -1,0 +1,11 @@
+AuthUserFile /homez.2020/ctitransox/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Restricted Access"
+AuthType Basic
+<Files "*">
+	require valid-user
+</Files>
+<Files "checkConnexions.php">
+	Allow from all
+  Satisfy any
+</Files>
